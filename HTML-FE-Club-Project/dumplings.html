@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dumplings</title>
+  </head>
+  <body id="Page">
+    <link rel="stylesheet" href="css/style.css" />
+    <a href="index.html">Go back to HOME</a>
+    <h1 class="headers">Homemade Dumplings !</h1>
+    <img src="images/dumplings.jpeg" alt="dumplings" width="500" height="300" />
+    <div class="ingredients">
+      <h2 class="headers">Ingredients:</h2>
+      <p>Make sure you have everything you need before starting to cook</p>
+
+      <form action="/action_page.php">
+        <input type="checkbox" id="ingredient1" />
+        <label for="ingredient1"> 3 lbs green leafy vegetables</label><br />
+        <input type="checkbox" id="ingredient2" />
+        <label for="ingredient2"> 1.5 lbs ground pork</label><br />
+        <input type="checkbox" id="ingredient3" />
+        <label for="ingredient3"> 2/3 cups shaoxing wine</label><br />
+        <input type="checkbox" id="ingredient4" />
+        <label for="ingredient4"> 3 tablespoons sesame oil</label><br />
+        <input type="checkbox" id="ingredient5" />
+        <label for="ingredient5"> 1 tablespoon salt</label><br />
+        <input type="checkbox" id="ingredient6" />
+        <label for="ingredient6"> 3 tablespoons soy sauce</label><br />
+        <input type="checkbox" id="ingredient7" />
+        <label for="ingredient7"> 1/4 tablespoons white pepper</label><br />
+        <input type="checkbox" id="ingredient8" />
+        <label for="ingredient8"> 2/3 cups water</label><br />
+        <input type="checkbox" id="ingredient9" />
+        <label for="ingredient9"> 3 packages dumpling wrappers</label
+        ><br /><br />
+      </form>
+    </div>
+
+    <h2 class="headers">Recipe:</h2>
+    <a href="https://thewoksoflife.com/dumpling-recipe-youll-ever-need/"
+      >View the recipe here!</a
+    >
+
+    <h2 class="headers">Give it a rating <span id="star">&#11088;</span></h2>
+    <p>Once you've tried out this recipe, give it a rating out of 5 stars!</p>
+
+    <form action="/action_page.php">
+      <label for="rating">I rate it:</label>
+      <select id="rating" name="rating">
+        <option value="one">1</option>
+        <option value="two">2</option>
+        <option value="three">3</option>
+        <option value="four">4</option>
+        <option value="five">5</option>
+      </select>
+      <input type="submit" />
+    </form>
+
+    <h2 class="headers">Suggestions?</h2>
+    <p>
+      Do you have any suggestions on how this recipe can be improved? Leave a
+      message below&#11015;
+    </p>
+
+    <form id="message-box" action="/action_page.php">
+      <textarea name="message" rows="3" cols="67"></textarea>
+      <br /><br />
+      <input id="submit" type="submit" />
+    </form>
+  </body>
+</html>

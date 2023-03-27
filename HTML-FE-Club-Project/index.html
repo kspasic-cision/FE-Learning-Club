@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katarina's Recipe Wishlist</title>
+  </head>
+  <link rel="stylesheet" href="css/style.css" />
+  <div id="Page">
+    <div>
+      <!--Title Header-->
+      <h1 class="headers">Katarina's Recipe Wishlist</h1>
+      <p>
+        This website will give an overview of all recipes I want to try out
+        next!
+      </p>
+    </div>
+
+    <div>
+      <!--Images-->
+      <img src="images/cooking.jpeg" alt="cooking" width="500" height="300" />
+    </div>
+
+    <div>
+      <!--List-->
+      <nav>
+        <ul>
+          <li>
+            <a href="dumplings.html">Homemade Dumplings</a>
+            <ul>
+              In
+              <span id="country">Asian</span>
+              cuisines, dumplings are delicate, bite-sized treats of different
+              fillings wrapped in a thin layer of dough
+            </ul>
+          </li>
+          <li>
+            <a href="gyros.html">Gyros</a>
+            <ul>
+              Gyros is a
+              <span id="country">Greek</span>
+              dish of roasted meat served in a pita, usually with tomato, onion,
+              and tzatziki
+            </ul>
+          </li>
+          <li>
+            <a href="sushi.html">Salmon Avocado Sushi Roll</a>
+            <ul>
+              Sushi is a
+              <span id="country">Japanese</span>
+              dish featuring specially prepared rice and usually some type of
+              fish or seafood, often raw, but sometimes cooked.
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <h2 class="headers">Let me know what you think!</h2>
+    <p>
+      Please give me a thumbs up or down to rate your experience on my cooking
+      blog!
+    </p>
+
+    <button
+      type="thumbsup"
+      onclick="alert('I am glad to hear! Please leave a comment on what you liked.')"
+    >
+      &#128077;
+    </button>
+    <button
+      type="thumpsdown"
+      onclick="alert('I am sorry to hear that! Please leave a comment on how I can improve your experience.')"
+    >
+      &#128078;
+    </button>
+
+    <h3 class="headers">
+      Leave a comment describing your experience with my cooking blog:
+    </h3>
+    <form id="message-box" action="/action_page.php">
+      <textarea name="message" rows="5" cols="67"></textarea>
+      <br /><br />
+      <input id="submit" type="submit" />
+    </form>
+  </div>
+</html>
